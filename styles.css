@@ -284,7 +284,7 @@ body .demo-blog {
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
   background-image: url('images/road_big.jpg');
-  height: 280px;
+  height: 400px;
 }
 .demo-blog--blogpost .comments {
   background-color: #EEE;
