@@ -98,7 +98,7 @@ body .demo-blog {
 }
 .demo-blog .mdl-card__supporting-text {
   width: 100%;
-  padding: 16px;
+  padding: 8px;
   min-height: 64px;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -170,7 +170,7 @@ body .demo-blog {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.coffee-pic {
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.heading-pic {
   -webkit-order: 0;
       -ms-flex-order: 0;
           order: 0;
@@ -180,7 +180,7 @@ body .demo-blog {
       -ms-flex-order: -1;
           order: -1;
 }
-.demo-blog .coffee-pic .mdl-card__media {
+.demo-blog .heading-pic .mdl-card__media {
   background-image: url('images/coffee.jpg');
 }
 .demo-blog .something-else .mdl-card__media {
@@ -221,7 +221,7 @@ body .demo-blog {
   border-bottom-right-radius: 2px;
 }
 .demo-blog .on-the-road-again .mdl-card__media {
-  background-image: url('images/road.jpg');
+  background-image: url('images/road.gif');
 }
 .demo-blog .shopping .mdl-card__media {
   background-image: url('images/shopping.jpg');
