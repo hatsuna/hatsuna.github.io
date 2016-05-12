@@ -220,11 +220,14 @@ body .demo-blog {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.demo-blog .on-the-road-again .mdl-card__media {
-  background-image: url('images/road.gif');
+.demo-blog .rpg_priest_sim .mdl-card__media {
+  background-image: url('images/rpg_priest_sim.gif');
 }
-.demo-blog .shopping .mdl-card__media {
-  background-image: url('images/shopping.gif');
+.demo-blog .run_run_rambit .mdl-card__media {
+  background-image: url('images/run_run_rambit.gif');
+}
+.demo-blog .x_fighter .mdl-card__media {
+  background-image: url('images/x_fighter.gif');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
@@ -282,10 +285,29 @@ body .demo-blog {
 .demo-blog--blogpost .custom-header {
   background-color: transparent;
 }
-.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
+/*.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
   background-image: url('images/road_big.jpg');
   height: 400px;
+}*/
+.demo-blog--blogpost .demo-blog__posts > .rpg_priest_sim .mdl-card__media {
+  background-image: url('images/rpg_priest_sim.gif');
+  max-width: 100%;
+  height: 500px;
 }
+
+.demo-blog--blogpost .demo-blog__posts > .run_run_rambit .mdl-card__media {
+  background-image: url('images/run_run_rambit.gif');
+  max-width: 100%;
+  height: 500px;
+}
+
+.demo-blog--blogpost .demo-blog__posts > .x_fighter .mdl-card__media {
+  background-image: url('images/x_fighter.gif');
+  max-width: 100%;
+  height: 500px;
+}
+
+
 .demo-blog--blogpost .comments {
   background-color: #EEE;
 }
