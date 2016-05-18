@@ -449,9 +449,9 @@ body .demo-blog {
 }
 
 .demo-blog--blogpost .demo-back {
-  position: absolute;
+ /* position: absolute; 
   top: 16px;
-  left: 16px;
+  left: 16px; */
   color: white;
   z-index: 9999;
 }
