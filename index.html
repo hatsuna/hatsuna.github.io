@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="description" content="Matthew Pon - Game Dev">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>hatsunamatata</title>
 
@@ -61,138 +61,173 @@
     </style>
   </head>
   <body>
-    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
-      <main class="mdl-layout__content">
-        <div class="demo-blog__posts mdl-grid">
-          <div class="mdl-card heading-pic mdl-cell mdl-cell--8-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3>Matthew Pon</h3>
+     <!-- Uses a header that contracts as the page scrolls down. -->
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <a class="mdl-navigation__link" href="index.html"><span class="mdl-layout-title">hatsunamatata</span></a>
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="https://www.overleaf.com/read/ddwczcjwbsdx">Resume</a>  
+            <a class="mdl-navigation__link" href="https://github.com/hatsuna">GitHub</a>
+            <a class="mdl-navigation__link" href="https://medium.com/@mattpon">Medium</a>
+          </nav>
+          <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+            <label class="mdl-button mdl-js-button mdl-button--icon"
+                   for="waterfall-exp">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" name="sample"
+                     id="waterfall-exp">
             </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text mdl-cell mdl-cell--8-col">
-              Matt is a game designer from West Harrison, New York. In the Fall of 2015, he completed his coursework at New York University Tandon School of Engineering (formerly known as Polytechnic Institute of New York University) for a B.S. in Computer Science and a Minor in Game Engineering. Whether it’s coding, modeling, animating, playing, or some combination of the bunch; he loves games.
-            </div>
-          </div>
-          <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-<!--            
-            <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
-              <i class="material-icons mdl-color-text--white" role="presentation">add</i>
-              <span class="visuallyhidden">add</span>
-            </button>
--->
-            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
-              <img src="images/logo.png">
-<!--            +1,337  -->
-            </div>
-            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-              <div>
-                <strong>matthew.pon@nyu.edu</strong>
-              </div>
-              <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
-                <a href="https://www.overleaf.com/read/ddwczcjwbsdx"><li class="mdl-menu__item">Resume</li></a>
-                <a href="https://github.com/hatsuna"><li class="mdl-menu__item">GitHub</li></a>
-                <a href="https://medium.com/@mattpon"><li class="mdl-menu__item">Medium</li></a>
-              </ul>
-              <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">more_vert</i>
-                <span class="visuallyhidden">show menu</span>
-              </button>
-            </div>
-          </div>
-          <!-- Newest Post -->
-          <div class="mdl-card rpg_priest_sim mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="rpgpriest.html">RPG Priest Simulator</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>RPG Priest Simulator on <a href="https://tuna.itch.io/rpgpriestsimulator2016">itch.io</a></strong>
-                <span>January 2016</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card run_run_rambit mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="runrunrambit.html">Run Run Rambit</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>Run Run Rambit on <a href="https://runrunrambit.itch.io/run-run-rambit">itch.io</a></strong>
-                <span>December 2015</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card x_fighter mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="xfighter.html">X Fighter</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>X Fighter on <a href="https://github.com/hatsuna/CS3113/tree/master/Assignments/Final%20Project">GitHub</a></strong>
-                <span>December 2015</span>
-              </div>
-            </div>
-          </div>
-          <!-- Post Examples
-          <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">On the road again</a></h3>
-            </div>
-            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__title mdl-color-text--grey-50">
-              <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Shopping</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-              Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>The Newist</strong>
-                <span>2 days ago</span>
-              </div>
-            </div>
-          </div> -->
-<!--
-          <nav class="demo-nav mdl-cell mdl-cell--12-col">
-            <div class="section-spacer"></div>
-            <a href="entry.html" class="demo-nav__button" title="show more">
-              More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              </button>
-            </a>
-          </nav> -->
+          </div>-->
         </div>
-        <footer class="mdl-mini-footer">
+      </header>
+      <div class="mdl-layout__drawer">
+        <a class="mdl-layout-title mdl-navigation__link" href="index.html">hatsunamatata</a>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="https://www.overleaf.com/read/ddwczcjwbsdx">Resume</a>
+          <a class="mdl-navigation__link" href="https://github.com/hatsuna">GitHub</a>
+          <a class="mdl-navigation__link" href="https://medium.com/@mattpon">Medium</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+          <div class="demo-blog__posts mdl-grid">
+            <div class="mdl-card heading-pic mdl-cell mdl-cell--8-col">
+              <div class="mdl-card__media mdl-color-text--grey-50">
+                <h3>Matthew Pon</h3>
+              </div>
+              <div class="mdl-color-text--grey-600 mdl-card__supporting-text mdl-cell mdl-cell--8-col">
+                Matt is a game designer from West Harrison, New York. In the Fall of 2015, he completed his coursework at New York University Tandon School of Engineering (formerly known as Polytechnic Institute of New York University) for a B.S. in Computer Science and a Minor in Game Engineering. Whether it’s coding, modeling, animating, playing, or some combination of the bunch; he loves games.
+              </div>
+            </div>
+            <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+  <!--            
+              <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+                <i class="material-icons mdl-color-text--white" role="presentation">add</i>
+                <span class="visuallyhidden">add</span>
+              </button>
+  -->
+              <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+                <img src="images/logo.png">
+  <!--            +1,337  -->
+              </div>
+              <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+                <div>
+                  <strong>Contact Me</strong>
+                </div>
+                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
+                  <li class="mdl-menu__item">matthew.pon@nyu.edu</li>
+                  <li class="mdl-menu__item">(914) 844-8584</li>
+                </ul>
+                <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                  <i class="material-icons" role="presentation">more_vert</i>
+                  <span class="visuallyhidden">show menu</span>
+                </button>
+              </div>
+            </div>
+            <!-- Newest Post -->
+            <div class="mdl-card rpg_priest_sim mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__media mdl-color-text--grey-50">
+                <h3><a href="rpgpriest.html">RPG Priest Simulator</a></h3>
+              </div>
+              <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                  <strong>RPG Priest Simulator on <a href="https://tuna.itch.io/rpgpriestsimulator2016">itch.io</a></strong>
+                  <span>January 2016</span>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-card run_run_rambit mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__media mdl-color-text--grey-50">
+                <h3><a href="runrunrambit.html">Run Run Rambit</a></h3>
+              </div>
+              <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                  <strong>Run Run Rambit on <a href="https://runrunrambit.itch.io/run-run-rambit">itch.io</a></strong>
+                  <span>December 2015</span>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-card x_fighter mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__media mdl-color-text--grey-50">
+                <h3><a href="xfighter.html">X Fighter</a></h3>
+              </div>
+              <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                  <strong>X Fighter on <a href="https://github.com/hatsuna/CS3113/tree/master/Assignments/Final%20Project">GitHub</a></strong>
+                  <span>December 2015</span>
+                </div>
+              </div>
+            </div>
+            <!-- Post Examples
+            <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__media mdl-color-text--grey-50">
+                <h3><a href="entry.html">On the road again</a></h3>
+              </div>
+              <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+                Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+              </div>
+              <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                  <strong>The Newist</strong>
+                  <span>2 days ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__title mdl-color-text--grey-50">
+                <h3 class="quote"><a href="entry.html">I couldn’t take any pictures but this was an amazing thing…</a></h3>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+              </div>
+              <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                  <strong>The Newist</strong>
+                  <span>2 days ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-card shopping mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__media mdl-color-text--grey-50">
+                <h3><a href="entry.html">Shopping</a></h3>
+              </div>
+              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+              </div>
+              <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+                <div class="minilogo"></div>
+                <div>
+                  <strong>The Newist</strong>
+                  <span>2 days ago</span>
+                </div>
+              </div>
+            </div> -->
+  <!--
+            <nav class="demo-nav mdl-cell mdl-cell--12-col">
+              <div class="section-spacer"></div>
+              <a href="entry.html" class="demo-nav__button" title="show more">
+                More
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                  <i class="material-icons" role="presentation">arrow_forward</i>
+                </button>
+              </a>
+            </nav> -->
+          </div>
+          <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
               <span class="visuallyhidden">Twitter</span>
@@ -211,6 +246,7 @@
             </button>
           </div>
         </footer>
+        </div>    
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
